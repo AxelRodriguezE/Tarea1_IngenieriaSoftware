@@ -64,6 +64,18 @@ int main(int argc, char * argv[])
     string mas("+");
     string menos("-");
 
+    string indicador = argv[1];
+
+    if(indicador == "-v")
+    {
+        cout << "Trabajo realizado por: " << endl;
+        cout << "                       Axel Rodriguez Espinoza. Estudiante de Ingenieria en informatica UTEM" << endl;
+        cout << "                       Nicolas Oyarzun Hernandez. Estudiante de Ingenieria civil en computacion mencion informatica UTEM" << endl;
+        cout << "                       Pedro Salas Vergara. Estudiante de Ingenieria civil en computacion mencion informatica UTEM" << endl;
+        cout << "Compilado el " << __DATE__ << ", a las " << __TIME__ << endl;
+        exit(0);
+    }
+
     cout << "Ejecutable:" << argv[0] << "\n";
 
     for (i = 0; i < argc; i++)
@@ -121,7 +133,6 @@ int main(int argc, char * argv[])
     }
     cout << resultado.str() << endl;
 
-    string indicador = argv[1];
 
     if(indicador == "-g")
     {
